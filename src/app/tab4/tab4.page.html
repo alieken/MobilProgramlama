@@ -1,0 +1,17 @@
+<ion-content [fullscreen]="true" class="content">
+    <mat-list class="liste">
+      <p></p>
+      <button class="butongonder" type="button" (click)="gonder()">Yenile</button>
+      <mat-list-item *ngFor="let array of myarray" class="listele">
+        <hr width="100%" color="#0000F8" size="4">
+        <ion-icon class="center" id={{array.id}} (click)="iconclick(array.id)" name="add-circle-outline"></ion-icon>
+        <h3 matLine> {{array.marka}} </h3>
+        <p matLine>
+          <span> {{array.konu}} </span>
+          <span class="demo-2"> -- {{array.mesaj}} </span>
+        </p>
+      </mat-list-item>
+      <hr width="100%" color="#0000F8" size="4">
+    </mat-list>
+  </ion-content>
+  

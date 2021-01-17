@@ -1,0 +1,51 @@
+.search-hero {
+  max-width: 600px;
+  padding-bottom: 20px;
+  margin:auto;
+}
+ion-content{
+
+  --ion-background-color:#01030509;
+}
+.btn1 {
+  color : rgb(49, 46, 46);
+  background-color: rgba(255, 222, 121, 0.96);
+  border-radius: 10px 0 0 10px;
+  font-size: 16px;
+}
+.form-control{
+  background-color: black;
+  color: blanchedalmond;
+}
+.title{
+  text-align: center;
+}
+.form-control {
+  box-shadow: 0 10px 40px 0 #B0C1D9;
+}
+.form-control::placeholder  {
+  font-family: FontAwesome;
+}
+.demo-content {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    h3 {
+      margin-top: .3em;
+    }
+  }
+  .demo-content--column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .demo-content--row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0 10px 0;
+  }
+  .search {
+    margin-bottom: 16px;
+}

@@ -1,0 +1,39 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+  </ion-header>
+  <div class="divv">
+    <p></p>
+    <b class="marka">  Marka : </b>
+    <br><br>
+    <ion-searchbar class = "search-bar"type="text" id="marka" debounce="500" (ionChange)="getItems($event)"></ion-searchbar>
+    <ion-list *ngIf="isItemAvailable">
+        <ion-item button *ngFor="let item of items" (click)="deneme(item)">{{ item }} </ion-item>
+    </ion-list>
+    <br><br>
+    <b class="konu">  Konu : </b>
+    <input type="text" class="input2" id = "konu" placeholder="Konuyu Giriniz" [(ngModel)]="konubilgisi">
+    <p></p>
+    <br><br>
+    <label class="container">İstek
+      <input type="radio" checked="checked" name="istekvs" id="istek" value="istek">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Öneri
+      <input type="radio" name="istekvs" id="oneri" value="oneri">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Şikayet
+      <input type="radio" name="istekvs" id="sikayet" value="sikayet">
+      <span class="checkmark"></span>
+    </label>
+    <p></p>
+    <br><br>
+    <b class="mesaj">  Mesaj : </b>
+    <br><br>
+      <textarea class="mesaj2" id="mesaj" name="message" placeholder="Mesajınızı Yazınız" style="height:200px"></textarea>
+      <br><br>
+      <p></p>
+      <button class="butongonder" type="button" (click)="gonder()">Gönder</button>
+  </div>
+
+</ion-content>
