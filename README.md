@@ -1,6 +1,6 @@
 # 170201075 Ali EKEN
 
-cd MobilProgramlama/
+cd MobilProgramlama/ 
 
 npm install
 
@@ -89,10 +89,12 @@ Onaylama butonuna basılırsa yorum durumu tik oluyor ve kullanıcının geçmi�
 ![alt text](https://github.com/alieken/MobilProgramlama/blob/main/images/admin.JPG)
 
 Admin kullanıcısı;
+
 kullanıcı adı : alieken
 şifre : alieken
 
 Hali hazırda var olan kullanıcılar;
+
 kullanıcı adı : aliee
 şifre : ali
 
